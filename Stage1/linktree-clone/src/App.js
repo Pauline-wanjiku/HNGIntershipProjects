@@ -1,51 +1,65 @@
 import React from "react";
 import "./style.css";
 import profileImage from "./profileImage.jpg";
-
-console.log(profileImage);
+import zuriInternship from "./images/ZuriInternship.jpg";
+import footerText from "./images/footertext.jpg";
+import ingressive from "./images/ingressive.jpg";
+import shareLink from "./images/share.jpg";
+import slack from "./images/slackIcon.jpg";
+import github from "./images/githubIcon.jpg";
 
 const information = {
   TwitterName: "pauline_shiko",
   slackName: "Pauline Wanjiku",
   profileImages: profileImage,
+  footer: footerText,
+  iconSlack: slack,
+  iconGithub: github,
+};
+const handleMouseOver = () => {
+  console.log("hello");
 };
 function App() {
   return (
     <>
-      <div className="container">
+      <main className="container">
         <ProfileInfo />
         <Links />
-      </div>
+        <SocialIcons />
+        <Footer />
+      </main>
     </>
   );
 }
-const ProfileInfo = (props) => {
-  const { profileImages, TwitterName, slackName } = props;
+const ProfileInfo = () => {
   return (
     <>
-      <article>
-        <img
-          src={information.profileImages}
-          alt={profileImage}
-          id="profile_img"
-        />
-        <p id="twitter">{information.TwitterName}</p>
-        <p hidden>{information.slackName}</p>
-      </article>
+      <div className="content">
+        <div className="profile">
+          <img src={shareLink} alt="" className="shareLink" />
+          <img
+            src={information.profileImages}
+            alt={profileImage}
+            id="profile__img"
+          />
+          <p id="twitter">{information.TwitterName}</p>
+          <p hidden>{information.slackName}</p>
+        </div>
+      </div>
     </>
   );
 };
 const Links = () => {
   return (
     <>
-      <article>
+      <div className="links">
         <div>
-          <a href="" id="btn_zuri">
+          <a href="" id="twitter_link">
             Twitter Link
           </a>
         </div>
         <div>
-          <a href="" id="btn_zuri">
+          <a href="" id="btn__zuri">
             Zuri Team
           </a>
         </div>
@@ -69,7 +83,28 @@ const Links = () => {
             Design Books
           </a>
         </div>
-      </article>
+      </div>
+    </>
+  );
+};
+const SocialIcons = () => {
+  return (
+    <>
+      <div className="socialIcon">
+        <img src={slack} alt="" srcset="" />
+        <img src={github} alt="" srcset="" />
+      </div>
+    </>
+  );
+};
+const Footer = () => {
+  return (
+    <>
+      <div className="footer">
+        <img src={zuriInternship} alt="" />
+        <img src={footerText} />
+        <img src={ingressive} alt="" />
+      </div>
     </>
   );
 };

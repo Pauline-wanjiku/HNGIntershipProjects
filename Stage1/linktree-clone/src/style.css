@@ -1,28 +1,32 @@
-* {
+/* * {
   margin: 0px;
   padding: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .container {
-  padding: 20px;
+  width: 1182px;
+  height: auto;
+  padding: 20px 30px 90px;
   margin: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: red;
 }
+
 #profile_img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
   border-radius: 50%;
-  padding: 10px;
-  margin: 15px;
+  padding: 10px 26px 26px 30px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+ 
 }
 #twitter {
-  align-items: center;
   padding: 10px;
   margin: 2px;
   display: flex;
@@ -33,62 +37,99 @@
 }
 a {
   color: rgb(19, 10, 10);
-  width: 60vw;
-  min-height: 6vh;
-  background: rgb(250, 246, 246);
-  font-size: 20px;
-  padding: 20px 10px 10px ;
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 800px;
+  min-width: 19vw;
+  max-height: 9vh;
+  text-align: center;
   text-decoration: none;
-  border: 10px solid rgb(253, 249, 249);
-  border-radius: 20px;
-  
-  padding: 10px 120px 10px;
-  margin: 30px;
+  white-space: nowrap;
+  background: rgb(236, 235, 235);
+  font-size: 20px;
+  padding: 20px 20px 30px;
+  margin: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 5px solid white;
+  border-radius: 15px;
 }
-a:hover{
-    background: rgb(206, 207, 206);
+a:hover {
+  background: rgb(206, 207, 206);
+}
+.socialIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+  padding: 24px;
+  margin:20px ;
+
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 65px;
+  padding: 24px 0px;
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+}
+.shareLink{
+  position: absolute;
+  padding: 10px;
+  margin: 20px 10rem;
+  right:11.53%;
+  top: 14.95%;
+  bottom: 14.95%;
+  border-radius:50% ;
+  border:5px dotted #98A2B3;
+}
+@media only screen and (max-width: 700px) {
+  #profile_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  a {
+    width: 50%;
+    max-width: 150px;
+    max-height: fit-content;
+    padding: 10px 70px 20px;
+  }
+  .shareLink{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: -20px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  padding: 32px 0px;
+  position: absolute;
+  left: 0px;
+  top: 892px;
+  background-color: #ffffff;
 }
 
-/* #btn_zuri {
-  padding: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#books {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-  padding: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#book__python {
-  padding: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#pitch {
-  padding: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#book__design {
-  padding: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 } */
+.container{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 7px;
+  border: 2px solid black;
+}
+.profile{
+  
+}
