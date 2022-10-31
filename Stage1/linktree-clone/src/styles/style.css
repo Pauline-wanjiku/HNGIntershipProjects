@@ -1,0 +1,157 @@
+.container {
+  max-width: 100rem;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  padding: 7px;
+  text-transform: capitalize;
+}
+.content {
+  max-width: 60rem;
+  margin: 10px;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profile__img {
+  max-width: 120px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#twitter {
+  max-width: 50rem;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+#twitter_link,
+#btn__zuri,
+#books,
+#book__python,
+#pitch,
+#book__design {
+  box-sizing: border-box;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px 10px 10px;
+  padding: 20px;
+  min-height: 100%;
+  max-width: 900px;
+  width: 350px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  background: #eaecf0;
+}
+#twitter_link:hover,
+#btn__zuri:hover,
+#books:hover,
+#book__python:hover,
+#pitch:hover,
+#book__design:hover {
+  background: #d6d7da;
+}
+.socialIcon {
+  padding: 24px 0px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.horizontal {
+  width: 350px;
+  border-color: white;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: start;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 25px;
+}
+@media screen and (min-width: 320px), (max-width: 600px) {
+  .shareLink {
+    display: none;
+  }
+  .shareLinkMob {
+    position: absolute;
+    right: 20px;
+    top: 2rem;
+    border-radius: 40px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #twitter_link,
+  #btn__zuri,
+  #books,
+  #book__python,
+  #pitch,
+  #book__design {
+    min-width: 900px;
+    max-height: 900px;
+    background: #eaecf0;
+  }
+  #twitter_link:hover,
+  #btn__zuri:hover,
+  #books:hover,
+  #book__python:hover,
+  #pitch:hover,
+  #book__design:hover {
+    background: #d6d7da;
+  }
+  .horizontal {
+    width: 900px;
+    border-color: white;
+  }
+  .footer {
+    width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .shareLink {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dashed #d0d5dd;
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    right: 12rem;
+    top: 2rem;
+    bottom: 0;
+    flex: none;
+    align-items: stretch;
+  }
+  .shareLinkMob {
+    display: none;
+  }
+}
