@@ -35,6 +35,11 @@ const Links = () => {
             Design Books
           </a>
         </div>
+        <div>
+          <a href="" id="contact">
+           Contact Me
+          </a>
+        </div>
       </div>
     </>
   );

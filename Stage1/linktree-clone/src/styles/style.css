@@ -44,7 +44,8 @@
 #books,
 #book__python,
 #pitch,
-#book__design {
+#book__design,
+#contact {
   box-sizing: border-box;
   border: 1px solid #eaecf0;
   border-radius: 8px;
@@ -68,7 +69,8 @@
 #books:hover,
 #book__python:hover,
 #pitch:hover,
-#book__design:hover {
+#book__design:hover,
+#contact:hover {
   background: #d6d7da;
 }
 .socialIcon {
@@ -111,7 +113,8 @@
   #books,
   #book__python,
   #pitch,
-  #book__design {
+  #book__design,
+  #contact {
     min-width: 900px;
     max-height: 900px;
     background: #eaecf0;
@@ -121,7 +124,8 @@
   #books:hover,
   #book__python:hover,
   #pitch:hover,
-  #book__design:hover {
+  #book__design:hover,
+  #contact:hover {
     background: #d6d7da;
   }
   .horizontal {
