@@ -1,14 +1,9 @@
 import React from "react";
-import ProfileInfo from "./components/profileInfo"
-import Links from "./components/links";
+import ProfileInfo from "./components/profileInfo";
 import SocialIcons from "./components/socialIcons";
 import ColoredLine from "./components/hr";
 import Footer from "./components/footer";
-import './styles/style.css'
-
-
-
-
+import Links from "./pages/root";
 
 
 function App() {
@@ -24,7 +19,5 @@ function App() {
     </>
   );
 }
-
-
 
 export default App;

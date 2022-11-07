@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Links = () => {
   return (
@@ -35,15 +35,15 @@ const Links = () => {
             Design Books
           </a>
         </div>
-        <div>
-          <a href="" id="contact">
-           Contact Me
-          </a>
+              <div>
+                  {/* <a href="/contact" id="contact">Contact</a> */}
+          <Link to="/contact" id="contact">
+            contact
+          </Link>
         </div>
       </div>
     </>
   );
 };
 
-
-export default Links
+export default Links;

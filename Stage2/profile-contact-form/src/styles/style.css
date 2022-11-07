@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  max-width: 100rem;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  padding: 7px;
+  text-transform: capitalize;
+}
+.content {
+  max-width: 60rem;
+  margin: 10px;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profile__img {
+  max-width: 120px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#twitter {
+  max-width: 50rem;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+#twitter_link,
+#btn__zuri,
+#books,
+#book__python,
+#pitch,
+#book__design,
+#contact {
+  box-sizing: border-box;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px 10px 10px;
+  padding: 20px;
+  min-height: 100%;
+  max-width: 1100px;
+  width: 350px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  background: #eaecf0;
+}
+#twitter_link:hover,
+#btn__zuri:hover,
+#books:hover,
+#book__python:hover,
+#pitch:hover,
+#book__design:hover,
+#contact:hover {
+  background: #d6d7da;
+}
+.socialIcon {
+  padding: 24px 0px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.horizontal {
+  width: 350px;
+  border-color: white;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: start;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 25px;
+}
+@media screen and (min-width: 320px), (max-width: 600px) {
+  .shareLink {
+    display: none;
+  }
+  .shareLinkMob {
+    position: absolute;
+    right: 20px;
+    top: 2rem;
+    border-radius: 40px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #twitter_link,
+  #btn__zuri,
+  #books,
+  #book__python,
+  #pitch,
+  #book__design,
+  #contact {
+    width: 1100px;
+    background: #eaecf0;
+  }
+  #twitter_link:hover,
+  #btn__zuri:hover,
+  #books:hover,
+  #book__python:hover,
+  #pitch:hover,
+  #book__design:hover,
+  #contact:hover {
+    background: #d6d7da;
+  }
+  .horizontal {
+    width: 1100px;
+    border-color: white;
+  }
+  .footer {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .shareLink {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dashed #d0d5dd;
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    right: 12rem;
+    top: 2rem;
+    bottom: 0;
+    flex: none;
+    align-items: stretch;
+  }
+  .shareLinkMob {
+    display: none;
+  }
+  /* contact */
+  @media only screen and(min-width:900px) {
+    /* form */
+  }
+  .form-containter {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstLastName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 1px 0px -9px;
+    margin: 0px ;
+  }
+  #first_name,
+  #last_name {
+    padding: 1px;
+    margin: 1px;
+
+  }
+  #email,
+  #message {
+    padding: 2px;
+    margin-left: 1px;
+    min-width: 800px;
+  }
+  .errorMessage{
+    display: none;
+  }
+  #btn__submit {
+    min-width: 800px;
+  }
+}
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* form styling*/
+.form-container {
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px 0 1px;
+  margin-top: 30px;
+}
+.contactMe {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 5px 10px 20px 3px;
+  padding: 40px 10px 5px;
+  line-height: 45px;
+  letter-spacing: -0.02em;
+  color: #101828;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #475467;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 0px;
+  margin-bottom:2rem ;
+}
+.firstLastName {
+  margin-top: 20px;
+}
+
+.fnameLabel,
+.lnameLabel,
+.emailLabel,
+.messageLabel {
+  margin: 9px;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #475467;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* input box */
+#first_name,
+#last_name,
+#email,
+#message {
+  color: #667085;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  width: 23rem;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 14px;
+  margin: 8px 3px 10px 7px;
+  outline-color: #b1e5fd;
+  gap: 8px;
+}
+
+/* Checkbox */
+.check-container {
+  color: #475467;
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 24px;
+  font-style: normal;
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 13px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  margin: 15px;
+  padding: auto;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+  background-color: #ffffff;
+  border: 1px solid #1570ef;
+  box-shadow: #1570ef;
+}
+
+/* When the checkbox is checked,  */
+.check-container input:checked ~ .checkmark {
+background-color: #ffffff; 
+border: 1px solid #1570ef; 
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* checkmark indicator */
+.check-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 2px;
+  height: 8px;
+  border: solid #1570ef;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.errorMessage {
+  color: red;
+  padding: 10px;
+  margin-bottom: 9px;
+}
+input[type="checkbox"] {
+  margin: 10px;
+  border-radius: 5px;
+  background: red;
+}
+#terms {
+  border: 1px solid red;
+}
+#btn__submit {
+  width: 380px;
+  background: #1570ef;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 5px 4px 6rem;
+  gap: 5px;
+}
+#btn__submit:hover {
+  background: #1f75ee;
+  border: 1px solid #1f75ee;
+  box-shadow: 0px 1px 2px rgba(7, 82, 233, 0.05);
+}
+#btn__submit:disabled {
+  background: #b2ddff;
+  border: 1px solid #b2ddff;
+}
